@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/fleet_gru/step_definitions",
         dryRun = false,
-        tags = "@logout"
+        tags = "@FLEETG-1430"
 
 
 

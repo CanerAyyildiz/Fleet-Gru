@@ -10,7 +10,8 @@ import org.junit.Assert;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotVisibleException;
 
-public class Logout_stepdefiinitions {
+public class Logout_stepdefinitions {
+
 
    ProfilMenuPage profilMenuPage = new ProfilMenuPage();
    LoginPage loginPage = new LoginPage();
@@ -18,27 +19,29 @@ public class Logout_stepdefiinitions {
     @And("user clicks to login button")
     public void userClicksToLoginButton() throws InterruptedException {
         loginPage.submitButton.click();
-        Thread.sleep(10000);
+        Thread.sleep(18000);
     }
 
     @And("user click to profil menü")
     public void userClickToProfilMenü() throws InterruptedException {
         try{
+
             profilMenuPage.selectlogout.click();
         }catch (ElementNotVisibleException e) {
             System.out.println("ElementNotVisibleException got handled successfully");
         }
-      //  Thread.sleep(5000);
+        Thread.sleep(5000);
 
     }
     @When("user clicks to log out button")
     public void user_clicks_to_log_out_button() throws InterruptedException {
         try{
+
             profilMenuPage.logoutButton.click();
         }catch (ElementClickInterceptedException e) {
             System.out.println("ElementClickInterceptedException got handled successfully");
         }
-      Thread.sleep(2000);
+      Thread.sleep(3000);
 
 
 
