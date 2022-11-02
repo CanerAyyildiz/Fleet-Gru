@@ -27,5 +27,8 @@ public class LoginPage {
     @FindBy(xpath = "//div[text()='Invalid user name or password.']")
     public WebElement alertMessage;
 
+    @FindBy(xpath = "//h2[@class='title']")
+    public WebElement loginPageHeader;
+
 
 }

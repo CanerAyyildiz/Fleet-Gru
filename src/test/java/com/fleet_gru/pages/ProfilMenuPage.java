@@ -18,4 +18,12 @@ public class ProfilMenuPage {
 
     @FindBy(id = "user-menu")
     public WebElement userMenu;
+
+    @FindBy(xpath = "//i[@class='fa-caret-down']")
+    public WebElement selectlogout;
+
+   @FindBy(xpath = "//a[text()='Logout']")
+    public  WebElement logoutButton;
+
+
 }
